@@ -1,13 +1,4 @@
-v1.0.0 (2026-10-02)
+v1.0.0 (2026-10-06)
 [Added]
-- Test
-[Changed]
-- Test
-[Deprecated]
-- Test
-[Fixed]
-- Test
-[Removed]
-- Test
-[Security]
-- Test
+- Create mutliple link landing pages
+  - Customize the style of landing pages
