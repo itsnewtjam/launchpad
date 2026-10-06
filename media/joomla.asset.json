@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_launchpad",
+  "version": "4.0.0",
+  "description": "",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "com_launchpad.style",
+      "description": "",
+      "type": "style",
+      "uri": "com_launchpad/launchpad.css"
+    }
+  ]
+}

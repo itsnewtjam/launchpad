@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <layout title="COM_LAUNCHPAD_MENU_PAGE_LABEL">
+    <message>COM_LAUNCHPAD_MENU_PAGE_DESC</message>
+  </layout>
+  <config>
+    <fields name="request">
+			<fieldset name="request">
+				<field
+					name="id"
+					label="COM_LAUNCHPAD_MENU_PAGE"
+					type="sql"
+					query="SELECT id, title FROM #__launchpad_pages WHERE published = 1"
+          key_field="id"
+          value_field="title"
+          required="true"
+				/>
+      </fieldset>
+    </fields>
+	</config>
+</metadata>

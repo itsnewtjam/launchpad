@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+  <name>com_launchpad</name>
+  <version>1.0.0</version>
+  <author>newtjam</author>
+  <authorEmail>joomla@newtjam.com</authorEmail>
+  <authorUrl>https://newtjam.com</authorUrl>
+  <copyright>Copyright (C) 2026 newtjam. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later</license>
+  <description>COM_LAUNCHPAD_DESCRIPTION</description>
+  <scriptfile>install.php</scriptfile>
+  <updateservers>
+    <server type="extension" name="Launchpad Updates">https://raw.githubusercontent.com/itsnewtjam/launchpad/main/dist/update.xml</server>
+  </updateservers>
+  <namespace path="src">Newtjam\Component\Launchpad</namespace>
+  <media folder="media" destination="com_launchpad">
+    <folder>css</folder>
+    <filename>joomla.asset.json</filename>
+  </media>
+  <files folder="site">
+    <folder>language</folder>
+    <folder>src</folder>
+    <folder>tmpl</folder>
+  </files>
+  <administration>
+    <menu link="option=com_launchpad&amp;view=pages">COM_LAUNCHPAD</menu>
+    <files folder="admin">
+      <folder>forms</folder>
+      <folder>language</folder>
+      <folder>services</folder>
+      <folder>sql</folder>
+      <folder>src</folder>
+      <folder>tmpl</folder>
+      <filename>access.xml</filename>
+      <filename>config.xml</filename>
+    </files>
+  </administration>
+
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+    </sql>
+  </install>
+  <update>
+    <schemas>
+      <schemapath type="mysql">sql/updates/mysql</schemapath>
+    </schemas>
+  </update>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+    </sql>
+  </uninstall>
+</extension>

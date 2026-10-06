@@ -1,0 +1,57 @@
+.launchpad {
+  display: grid;
+  align-content: start;
+  min-height: 100vh;
+  padding-block: 6rem;
+  padding-inline: 1rem;
+}
+
+.launchpad-content {
+  width: 100%;
+  max-width: min(100%, 600px);
+  margin-inline: auto;
+}
+
+.launchpad-head {
+  display: grid;
+  justify-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.launchpad-image {
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.launchpad-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.launchpad-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.launchpad-items {
+  list-style: none;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.launchpad-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem 0.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  color: inherit;
+  text-align: center;
+}
